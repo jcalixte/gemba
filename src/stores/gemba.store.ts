@@ -7,9 +7,9 @@ type State = {
   gembas: Array<Gemba>
 }
 
-export const useGembaStore = defineStore<'gemba', State>('gemba', {
+export const useGembaStore = defineStore('gemba', {
   persist: true,
-  state: () => ({
+  state: (): State => ({
     gembas: []
   }),
   actions: {
